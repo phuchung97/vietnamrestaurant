@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>ICT_2021</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- TOP BEGIN -->
+        <header>
+            <div class="container">
+                <div id="toggle"><i class="fas fa-bars"></i></div>
+
+                    <ul class="main-menu">
+                        <li><a class="home" href="index.html">ホーム</a></li>
+                        <li><a class="top-title" href="index.html">ベトナムの店紹介</a></li>
+                        <li><a class="home" href="index.html">サイトマップ</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </header>
+        <!-- TOP END -->
+
+        <!-- NAV BEGIN -->
+        <div class="container mt-100">
+            <div class="row">
+                
+                <div class="col-3">
+                    <div class="eki-box">
+                        <a href="ebisu.html">
+                            <img src="./images/eki/01.png" class="img-fluid " alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="eki-box">
+                        <a href="yoyogi.html">
+                            <img src="./images/eki/02.png" class="img-fluid " alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="eki-box">
+                        <a href="shinokubo.html">
+                            <img src="./images/eki/03.png" class="img-fluid " alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-3">
+                    <div class="eki-box">
+                        <a href="takadanobaba.html">
+                            <img src="./images/eki/04.png" class="img-fluid " alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    
+
+        <div class="cen">
+            <img class="train-4" src="./images/train1.png" alt="">
+            <div class="container train">
+                <img class="train-4-1" src="./images/train1.png" alt="">
+            </div> 
+        </div>
+        <!-- NAV END -->
+
+        <!-- CONTENT INDEX BEGIN -->
+        <div class="container img-index  mt-3">
+            <img src="./images/bg1.jpg" class="img-fluid" alt="">
+        </div>
+        <!-- CONTENT INDEX END -->
+
+    </div>
+    
+    <!-- FOOTER BEGIN -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright:
+        <a class="text-dark" href="https://phuchung.info/" target="_blank">TPH</a>
+    </div>
+    <!-- FOOTER END -->
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- ADD CLASS HEADER-> STICKY  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if($(this).scrollTop()){
+                    $('header').addClass('sticky')
+                }else{
+                    $('header').removeClass('sticky')
+                }
+            })
+        });
+    </script>
+
+    <!-- ACTIVE REPONSIVE  -->
+    <script>
+        $(document).ready(function(){
+            $("#toggle").click(function(){
+                $(".main-menu").toggleClass("active");
+            });
+        
+        });
+    </script>
+ 
+
+</body>
+</html>

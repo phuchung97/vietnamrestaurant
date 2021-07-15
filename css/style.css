@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-image: url("./../images/bg/");
+    background-size: contain;
+}
 .mt-100{
     margin-top: 100px;
 }
@@ -10,10 +14,10 @@ ul{
 }
 ul li a{
     text-decoration: none;
-    color: #000;
+    color: #ecf0f1;
+    font-weight: bold;
 }
 .top-title{
-    font-size: 30px;
     font-weight: bold;
     color: #c23616;
 }
@@ -39,6 +43,7 @@ header{
     font-size: 18px;
     position: 0.3;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 .sticky a{
     color: whitesmoke;
@@ -52,6 +57,10 @@ header{
     transform: skew(-5deg);
     transition: ease-in-out 0.5s ;
 }
+.eki-box img{
+    height: 80%;
+}
+
 
 @media screen and (max-width: 768px){
 
@@ -85,6 +94,7 @@ header{
 .img-index img{
     width: 80%;
     text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
     
 }
 
@@ -101,7 +111,7 @@ header{
         opacity: 0;
     }
     100%{
-        transform: translate(2500px,0);
+        transform: translate(2900px,0);
         opacity: 1;
     }
 }
@@ -249,5 +259,117 @@ header{
         opacity: 1;
     }
 }
+.map{
+    position: relative;
+    text-align: center;
+    height: 400px;
+    width: 100%;
+}
+.map-img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    animation:
+        map 4s;
+}
+.nobita-img{
+    height: 40%;
+    position: absolute;
+    bottom: 0%;
+    right: 50%;
+    animation:
+        nobita 4s infinite;
+}
+.nobita-text{
+    font-size: 30px;
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    padding-top: 3%;
+    opacity: 0;
 
+    animation:
+        nobita-text 4s infinite;
+}
+@keyframes map {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+@keyframes nobita {
+    0%{
+        transform: translate(600px,0);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+@keyframes nobita-text {
+    0%{
+
+        opacity: 0;
+    }
+    100%{
+ 
+        opacity: 1;
+    }
+}
+
+.title-1{
+    font-size: 40px;
+    color: #6ab04c;
+    font-weight: bold;
+    text-align: center;
+}
+.title-2{
+    font-size: 30px;
+    color: #6ab04c;
+    font-weight: bold;
+    text-align: center;
+}
+.title-3{
+    font-size: 20px;
+    color: #6ab04c;
+}
+.title-4{
+    font-size: 40px;
+    color:burlywood;
+    text-align: center;
+    font-weight: bold;
+}
+.title-5{
+    font-size: 30px;
+    color: burlywood;
+    font-weight: bold;
+}
+.title-6{
+    font-size: 20px;
+    color: burlywood;
+}
+.content{
+    width: 100%;
+    height: 100%;
+}
+.content img{
+    width: 100%;
+    height: 100%;
+}
+.front-img{
+    width: 100%;
+    height: 300px;
+}
+.front-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ 
+}
 
